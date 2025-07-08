@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simposio de Emprendimiento Juvenil “Startup Spark”</title>
+<link rel="stylesheet" href="./styles/ejercicio5.css" />
+</head>
+<body>
+  <main>
+    <!-- Sección: Bienvenida e inspiración -->
+    <section id="bienvenida" aria-labelledby="bienvenida-title">
+      <h1 id="bienvenida-title">Simposio de Emprendimiento Juvenil “Startup Spark”</h1>
+      <p>
+        Bienvenidos a un espacio dedicado a jóvenes emprendedores tecnológicos con ganas de transformar el futuro. Inspírate con historias reales y conecta con personas que comparten tu pasión por innovar.
+      </p>
+    </section>
+
+    <!-- Sección: Casos de éxito -->
+    <section id="casos-exito" aria-labelledby="casos-title">
+      <h2 id="casos-title">Casos de éxito</h2>
+      <article>
+        <h3>App GreenTech</h3>
+        <p>Una startup creada por estudiantes universitarios que revolucionó la gestión ambiental con tecnología IoT.</p>
+      </article>
+      <article>
+        <h3>EduConnect</h3>
+        <p>Plataforma digital que conecta tutores con estudiantes, logrando más de 50,000 usuarios activos en su primer año.</p>
+      </article>
+      <article>
+        <h3>Food4All</h3>
+        <p>Proyecto social que reduce el desperdicio de alimentos, integrando restaurantes y bancos de alimentos.</p>
+      </article>
+    </section>
+
+    <!-- Sección: Reto de 24 horas -->
+    <section id="reto" aria-labelledby="reto-title">
+      <h2 id="reto-title">Reto de 24 horas</h2>
+      <p>
+        Demuestra tu creatividad y habilidades participando en nuestro reto intensivo. Tendrás 24 horas para presentar una idea viable que impacte positivamente en tu comunidad.
+      </p>
+      <p>
+        ¿Aceptas el desafío? Prepárate para innovar, colaborar y aprender con mentores expertos.
+      </p>
+    </section>
+
+    <!-- Enlace directo al formulario -->
+    <section id="enlace-formulario" aria-label="Enlace al formulario de inscripción">
+      <a href="#formulario" class="btn-enlace">Ir al formulario de inscripción</a>
+    </section>
+
+    <!-- Sección: Formulario de inscripción -->
+    <section id="formulario" aria-labelledby="formulario-title">
+      <h2 id="formulario-title">Formulario de inscripción</h2>
+      <form action="#" method="post" enctype="multipart/form-data" novalidate>
+        <!-- Nombre y edad -->
+        <div class="form-group">
+          <label for="nombreEdad">👤 Nombre y edad:</label>
+          <input type="text" id="nombreEdad" name="nombreEdad" required autocomplete="name" placeholder="Ej: Juan Pérez, 22 años" />
+        </div>
+
+        <!-- Idea de proyecto -->
+        <div class="form-group">
+          <label for="ideaProyecto">💡 Idea de proyecto:</label>
+          <textarea id="ideaProyecto" name="ideaProyecto" rows="4" required placeholder="Describe brevemente tu idea..."></textarea>
+        </div>
+
+        <!-- Participación individual o grupo -->
+        <fieldset>
+          <legend>󰔧 Participación:</legend>
+          <div>
+            <input type="radio" id="individual" name="participacion" value="Individual" required />
+            <label for="individual">Individual</label>
+          </div>
+          <div>
+            <input type="radio" id="grupo" name="participacion" value="Grupo" />
+            <label for="grupo">Grupo</label>
+          </div>
+        </fieldset>
+
+        <!-- Subida de propuesta -->
+        <div class="form-group">
+          <label for="propuesta">📁 Subida de propuesta (PDF):</label>
+          <input type="file" id="propuesta" name="propuesta" accept=".pdf" />
+        </div>
+
+        <!-- Autorización -->
+        <div class="form-group">
+          <input type="checkbox" id="autorizacion" name="autorizacion" required />
+          <label for="autorizacion">✅ Autorización del uso de imagen y derechos de participación</label>
+        </div>
+
+        <!-- Botones Limpiar y Enviar -->
+        <div class="botones">
+          <button type="reset" aria-label="Limpiar formulario">🔄 Limpiar</button>
+          <button type="submit" aria-label="Enviar formulario">📤 Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <section id="patrocinadores" aria-label="Información para patrocinadores">
+      <h2>Información para patrocinadores</h2>
+      <p>
+        Si quieres apoyar a jóvenes emprendedores y formar parte de esta iniciativa, contáctanos para obtener más detalles.
+      </p>
+    </section>
+
+    <section id="newsletter" aria-label="Suscripción a newsletter">
+      <h2>Newsletter</h2>
+      <form action="#" method="post" novalidate>
+        <label for="emailNewsletter">Suscríbete para recibir novedades:</label>
+        <input type="email" id="emailNewsletter" name="emailNewsletter" required placeholder="tuemail@ejemplo.com" />
+        <button type="submit">Suscribirse</button>
+      </form>
+    </section>
+
+    <section id="copyright" aria-label="Derechos de autor">
+      <p>© 2025 Startup Spark. Todos los derechos reservados. Proyecto ficticio.</p>
+    </section>
+  </footer>
+</body>
+</html>

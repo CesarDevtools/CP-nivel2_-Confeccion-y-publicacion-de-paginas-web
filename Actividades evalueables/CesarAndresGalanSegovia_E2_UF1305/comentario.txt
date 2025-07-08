@@ -1,0 +1,4 @@
+El scritp del reloj fue generado por la IA Gemini, solo le modifique el max widht, el container lo volvi flex para justificar el contenido al centro y le añadi border radius y sombras
+
+
+

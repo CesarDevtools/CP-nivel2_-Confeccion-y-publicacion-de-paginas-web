@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reloj Despertador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!--Div que contiene la hora mostrada-->
+    <h1>Reloj Despertador</h1>
+    <div id="clock" class="clock">00:00:00</div>
+
+    <!--Form para la alarma-->
+    <form id="alarmForm">
+      <label for="alarmHour">Hora:</label>
+      <input type="number" id="alarmHour" min="0" max="23" required>
+      <label for="alarmMinute">Minuto:</label>
+      <input type="number" id="alarmMinute" min="0" max="59" required>
+      <button type="submit">Configurar Alarma</button>
+    </form>
+
+    <!--Mensaje que contiene el status de la alarma-->
+    <p id="alarmStatus"></p>
+  </div>
+
+  <!-- Sonido de alarma -->
+  <audio id="alarmSound" src="russia-eas-alarm-1964-269169.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

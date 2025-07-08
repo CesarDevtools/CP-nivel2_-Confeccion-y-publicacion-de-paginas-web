@@ -1,0 +1,253 @@
+/* ================= RESET GENERAL ================= */
+body, h1, h2, h3, p, ul, li, input, button, select, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= CONFIGURACIÓN GENERAL ================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto gris oscuro para buena legibilidad */
+    line-height: 1.6;
+}
+
+a {
+    color: #004080; /* Azul suave para enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.header-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(50%); /* oscurece para que el texto se lea encima */
+}
+
+.header_tittle {
+    color: white;
+}
+/* Contenido encima de la imagen */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: yellow; /* Cambia el color al pasar el ratón */
+}
+
+
+
+
+/* ================= SECCIONES GENERALES ================= */
+section {
+    background-color: #f2f7ff; /* Fondo azul claro */
+    margin: 20px auto;
+    padding: 20px;
+    
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    color: #010305;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: inside square;
+
+
+}
+
+
+/* ================= DESCRIPCIÓN DEL EVENTO ================= */
+.section {
+    background-color: #e6f0ff; /* azul muy suave */
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.descripcion-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* para que se ajuste en pantallas pequeñas */
+}
+
+.descripcion-texto {
+    flex: 1 1 60%; /* mínimo 60% ancho */
+}
+
+.descripcion-texto h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.descripcion-texto p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.descripcion-imagen {
+    flex: 1 1 35%; /* mínimo 35% ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    max-width: 400px; /* opcional: para limitar tamaño en pantallas grandes */
+}
+
+
+#ponentes {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#ponentes h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.ponentes-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap; /* para que en pantallas pequeñas se adapten */
+}
+
+.ponente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 140px;
+}
+
+.ponente img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.ponente img:hover {
+  transform: scale(1.05);
+}
+
+.ponente h5 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+/* ================= FORMULARIO ================= */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+
+.botones {
+    margin-top: 15px;
+    border-radius: 50px;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #e6f0ff;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #004080;
+}
+
+footer img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+

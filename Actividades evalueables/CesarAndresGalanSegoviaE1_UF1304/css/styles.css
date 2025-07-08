@@ -1,0 +1,120 @@
+/* Fuente general y estilo base */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+/* Indicador de obligatorio */
+.obligatorio {
+    color: #e50914;
+    font-weight: bold;
+}
+
+/* Contenedor general del formulario */
+form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #e50914;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Leyendas de sección */
+legend {
+    color: #e50914;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Etiquetas y entradas */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1em;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Botón Enviar */
+.button__enviar {
+    background-color: #e50914;
+    color: #fff;
+}
+
+.button__enviar:hover {
+    background-color: #b00710;
+}
+
+/* Botón Limpiar */
+.button__clear {
+    background-color: #444;
+    color: #fff;
+}
+
+.button__clear:hover {
+    background-color: #666;
+}
+
+/* Párrafo informativo */
+p {
+    text-align: center;
+    color: #ccc;
+}

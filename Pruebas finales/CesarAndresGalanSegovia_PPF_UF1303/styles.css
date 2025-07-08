@@ -1,0 +1,155 @@
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF8E1; 
+  color: #212121; /* negro suave */
+  line-height: 1.6;
+}
+
+
+
+/* Estilos del header */
+.header-container {
+    padding: 10px;
+    position: fixed;
+    height: 100px;
+    background-color: lightgreen;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 1px solid #000000 ;
+    
+}
+
+.header-container img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    opacity: 85%;
+}
+
+.header-container h1{
+    font-family: 'Georgia', serif; /* Fuente */
+  font-size: 3rem;
+  color: #e8ece8; 
+  text-shadow: 2px 2px 4px rgba(13, 14, 13, 0.3); /* Sombra suave */
+  text-align: center;
+  margin: 1rem 0;
+  letter-spacing: 2px; /* Espaciado entre letras */
+  z-index: 1000;
+}
+
+.nav-container {
+    z-index: 1000;
+}
+
+.header-container a {
+    color: #dfd5d5; /* color base (claro) */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    z-index: 1000;
+    font-family: 'Georgia', serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    text-align: center;
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+.header-container a:hover {
+  color: #def704; 
+}
+
+
+.nav-container a{
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+/* Estilos para todas las secciones */
+section {
+   
+  
+  scroll-margin-top: 110px; /* Espacio para el header */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #F5F5DC;
+  border-left: 5px solid #4CAF50;
+  border-radius: 8px;
+  margin-top: 200px;
+}
+
+section .texto {
+  flex: 1;
+}
+
+section h2 {
+  color: #6D4C41;
+  margin-bottom: 1rem;
+}
+
+section p {
+  color: #212121;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+section ol {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+section li {
+  margin-bottom: 1rem;
+}
+
+section ul {
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+}
+
+section img {
+  width: 20%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+
+/* Footer */
+
+.footer {
+  background-color: #6bad62;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid #388E3C;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.9rem;
+}
+
+
+
+

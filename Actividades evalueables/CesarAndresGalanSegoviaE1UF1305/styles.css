@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f9f9f9;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+label,
+input,
+button,
+p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#stockMessage {
+  font-weight: bold;
+  color: #333;
+}

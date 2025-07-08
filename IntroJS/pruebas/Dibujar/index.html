@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canvas Mejorado</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+      cursor: crosshair;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .controles {
+      margin-bottom: 10px;
+    }
+    label {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Dibuja en el lienzo</h2>
+
+<div class="controles">
+  <label>Color:
+    <input type="color" id="colorPicker" value="#000000">
+  </label>
+
+  <label>Grosor:
+    <input type="range" id="grosorPicker" min="1" max="20" value="2">
+  </label>
+
+  <button id="borrar">Borrar dibujo</button>
+  <button id="guardar">Guardar imagen</button>
+</div>
+
+<canvas id="lienzo" width="600" height="400"></canvas>
+
+<script>
+  const canvas = document.getElementById('lienzo');
+  const ctx = canvas.getContext('2d');
+
+  const colorPicker = document.getElementById('colorPicker');
+  const grosorPicker = document.getElementById('grosorPicker');
+  const borrarBtn = document.getElementById('borrar');
+  const guardarBtn = document.getElementById('guardar');
+
+  let dibujando = false;
+
+  canvas.addEventListener('mousedown', (e) => {
+    dibujando = true;
+    ctx.beginPath();
+    ctx.moveTo(e.offsetX, e.offsetY);
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (dibujando) {
+      ctx.strokeStyle = colorPicker.value;       // Color actual
+      ctx.lineWidth = grosorPicker.value;        // Grosor actual
+      ctx.lineTo(e.offsetX, e.offsetY);
+      ctx.stroke();
+    }
+  });
+
+  canvas.addEventListener('mouseup', () => {
+    dibujando = false;
+  });
+
+  // Limpiar el lienzo
+  borrarBtn.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
+
+  // Guardar dibujo como imagen
+  guardarBtn.addEventListener('click', () => {
+    const enlace = document.createElement('a');
+    enlace.download = 'mi_dibujo.png';
+    enlace.href = canvas.toDataURL(); // convierte el canvas a imagen
+    enlace.click();
+  });
+</script>
+
+</body>
+</html>

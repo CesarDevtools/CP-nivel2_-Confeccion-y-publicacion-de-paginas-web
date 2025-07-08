@@ -1,0 +1,60 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tarjeta {
+    width: 150px;
+    height: 100px;
+    background-color: aqua;
+}
+
+
+.container2 {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+.container3 {
+    display: flex;
+    background-color: rgb(230, 173, 211);
+    justify-content: space-between;
+
+}
+
+.segundo {
+
+}
+
+.tercero {
+    order: -1;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(223, 169, 168);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: rgb(248, 26, 22);
+}
+
+.contenido {
+    width: 70%;
+    background-color: rgb(22, 248, 52);
+}

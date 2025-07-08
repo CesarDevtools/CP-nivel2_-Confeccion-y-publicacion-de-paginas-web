@@ -1,0 +1,204 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #f97316; /* naranja */
+  line-height: 1.5;
+}
+a {
+  color: #f97316;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Contenedor principal con margen y padding */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Sección descriptiva del evento */
+#descripcion {
+  margin-bottom: 3rem;
+}
+#descripcion h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px #f97316;
+}
+#descripcion p {
+  font-size: 1.2rem;
+}
+
+/* Mentores invitados */
+#mentores {
+  margin-bottom: 3rem;
+}
+#mentores h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px #f97316;
+}
+#mentores ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#mentores li {
+  background: #ffffff;
+  border: 1px solid #f97316;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1 1 45%;
+  box-shadow: 2px 2px 5px rgba(249, 115, 22, 0.5);
+}
+
+/* Agenda interactiva */
+#agenda {
+  margin-bottom: 3rem;
+}
+#agenda h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px #f97316;
+}
+#agenda details {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgba(249, 115, 22, 0.5);
+}
+#agenda summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+#agenda summary:focus {
+  outline: 2px solid #f97316;
+}
+
+
+
+/* Formulario */
+form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(249, 115, 22, 0.7);
+  color: #f97316;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #f97316;
+  background-color: #f3ecec;
+  color: #f97316;
+  box-shadow: inset 1px 1px 5px rgba(249, 115, 22, 0.3);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+  outline: 2px solid #f97316;
+  background-color: #1a1a1a;
+}
+
+/* Radios */
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  color: #f97316;
+}
+fieldset legend {
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+fieldset div {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+input[type="radio"] {
+  accent-color: #f97316;
+  width: 18px;
+  height: 18px;
+  box-shadow: 1px 1px 3px rgba(249, 115, 22, 0.7);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  accent-color: #f97316;
+  width: 18px;
+  height: 18px;
+  box-shadow: 1px 1px 3px rgba(249, 115, 22, 0.7);
+  vertical-align: middle;
+}
+
+/* Botones con radio, sombras y colores */
+.botones {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+button {
+  background-color: #f97316;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(255, 165, 0, 0.9);
+  transition: background-color 0.3s ease;
+}
+button:hover,
+button:focus {
+  background-color: #e65c00;
+  outline: none;
+  box-shadow: 0 0 10px #e65c00;
+}
+
+/* Pie de página */
+footer {
+  background-color: #ffffff;
+  color: #f97316;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  box-shadow: inset 0 1px 4px rgba(249, 115, 22, 0.5);
+}
+.footer-content p {
+  margin: 0.3rem 0;
+}
+.footer-content a {
+  font-weight: bold;
+}
+.footer-content a:hover,
+.footer-content a:focus {
+  text-decoration: underline;
+  outline: none;
+}

@@ -1,0 +1,13 @@
+
+    .outer {
+      padding: 40px;
+      background-color: lightblue;
+    }
+    .middle {
+      padding: 30px;
+      background-color: lightgreen;
+    }
+    .inner {
+      padding: 20px;
+      background-color: lightcoral;
+    }

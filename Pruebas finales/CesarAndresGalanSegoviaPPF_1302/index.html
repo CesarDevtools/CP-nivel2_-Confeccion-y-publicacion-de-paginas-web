@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Zapatos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table, th, td {
+            border: 1px solid rgb(221, 221, 221);
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: rgb(244, 244, 244);
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <header id="inicio">
+
+        <h1>Tienda de Zapatos</h1>
+        <p>Encuentra los mejores zapatos al mejor precio</p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <p>Bienvenido a nuestra tienda de zapatos. Aquí encontrarás una amplia variedad de calzado para todas las ocasiones.</p>
+
+
+        <table aria-label="Tabla de productos" id="productos">
+            <thead>
+                <tr>
+                    <th>Zapato</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Zapato Deportivo</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Zapato Casual</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Zapato Formal</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td>Sandalias</td>
+                    <td>$30</td>
+                </tr>
+            </tbody>
+            
+         </table>
+
+         <p>
+            <strong>Direcciones de nuestras tiendas:</strong>
+         </p>
+
+         <p>
+            Nuestras tiendas están ubicadas en varias ciudades de España. A continuación, te mostramos una lista de las ubicaciones:
+         </p>
+
+
+         <ol aria-label="Lista de ubicaciones de tiendas">
+            <li>Andalucía
+                <ul>
+                     <li>Sevilla - Calle Mayor, 12</li>
+                    <li>Granada - Avenida del Sol, 45</li>
+                </ul>
+             </li>
+
+            <li>Cataluña
+                <ul>
+                    <li>Barcelona - Plaza Cataluña, 8</li>
+                    <li>Girona - Calle del Río, 22</li>
+                </ul>
+            </li>
+
+            <li>Madrid
+                <ul>
+                    <li>Madrid Centro - Gran Vía, 10</li>
+                    <li>Alcobendas - Calle de la Paz, 5</li>
+                </ul>
+            </li>
+
+            <li>Valencia
+                <ul>
+                    <li>Valencia - Avenida de las Flores, 18</li>
+                    <li>Alicante - Calle del Mar, 30</li>
+                </ul>
+            </li>
+
+        </ol>
+
+
+        <div style= display:flex; justify-content: center; flex-wrap: wrap;>
+            <img src="contenido/zapatos.avif" alt="Zapatos" width="" height="200" style="display: inline-block; margin: 20px auto;"/>
+
+            <video src="contenido/Video.mp4" controls width="300" height="200" style="display: inline-block; margin: 20px auto;"></video>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 1rem; background-color: #333; color: white;">
+        <p>&copy; 2025 Tienda de Zapatos. Todos los derechos reservados.</p>
+
+        <p>
+            <a href="https://www.facebook.com" target="_blank" style="color: white;">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white;">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank" style="color: white;">Instagram</a>
+        </p>
+        
+        <p>Contacto: <a href="mailto:cessargalan@gmail.com" style="color: white;">cessargalan@gmail.com</a>
+        </p>
+        <p> <a href="#inicio" style="color: white;">Volver al inicio</a></p>
+    </footer>
+
+</body>
+</html>

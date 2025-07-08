@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f0ff; /* morado claro */
+  color: #3f0071; /* morado oscuro para texto */
+  line-height: 1.6;
+}
+a {
+  color: #7c3aed; /* morado brillante */
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+/* Bienvenida e inspiración */
+#bienvenida {
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #7c3aed;
+}
+#bienvenida h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+#bienvenida p {
+  font-size: 1.25rem;
+  color: #4b0082;
+}
+
+/* Casos de éxito */
+#casos-exito {
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #7c3aed;
+}
+#casos-exito h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#casos-exito article {
+  background: #ede9fe;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(124, 58, 237, 0.2);
+}
+#casos-exito article h3 {
+  margin-top: 0;
+  color: #5b21b6;
+}
+
+/* Reto de 24 horas */
+#reto {
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #7c3aed;
+}
+#reto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#reto p {
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+/* Enlace al formulario */
+#enlace-formulario {
+  text-align: center;
+  margin: 2rem 0;
+}
+.btn-enlace {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-weight: bold;
+  border-radius: 24px;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.5);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.btn-enlace:hover,
+.btn-enlace:focus {
+  background-color: #5b21b6;
+  outline: none;
+  box-shadow: 0 0 15px #5b21b6;
+}
+
+/* Formulario */
+form {
+  background: #ede9fe;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(124, 58, 237, 0.25);
+  color: #3f0071;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #7c3aed;
+  background-color: #fff;
+  color: #3f0071;
+  box-shadow: inset 1px 1px 5px rgba(124, 58, 237, 0.15);
+  font-size: 1rem;
+  font-family: inherit;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+  outline: 2px solid #7c3aed;
+  background-color: #f7f3ff;
+  box-shadow: 0 0 5px #7c3aed;
+  transition: all 0.3s ease;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+}
+
+/* Radios */
+fieldset {
+  border: none;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  color: #3f0071;
+}
+fieldset legend {
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+fieldset div {
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+input[type="radio"] {
+  accent-color: #7c3aed;
+  width: 18px;
+  height: 18px;
+  box-shadow: 1px 1px 3px rgba(124, 58, 237, 0.5);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  accent-color: #7c3aed;
+  width: 18px;
+  height: 18px;
+  box-shadow: 1px 1px 3px rgba(124, 58, 237, 0.5);
+  vertical-align: middle;
+}
+
+/* Botones con radio, sombras y colores */
+.botones {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: flex-start;
+  
+  
+}
+

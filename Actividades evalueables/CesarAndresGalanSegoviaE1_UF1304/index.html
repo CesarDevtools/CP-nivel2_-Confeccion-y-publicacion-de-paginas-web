@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <h1>Encuesta de Satisfacción del Servicio</h1>
+    <p> Por favor, completa esta encuesta; campos con <span class="obligatorio">*</span> son obligatorios</p>
+
+    <form id="miFormulario" action="pagina-destino.html" method="post" aria-label="Encuesta de satisfacción">
+
+        <!-- Sección 1: Datos del cliente -->
+        <fieldset aria-label="Datos del participante">
+
+            <!-- Nombre -->
+            <legend>Datos</legend>
+            <label for="nombre">Nombre completo<span class="obligatorio">*</span></label> 
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana Garcia" pattern="^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]{3,50}$"><br><br>
+
+            <!-- Correo Electronico -->
+            <label for="correo">Correo electrónico<span class="obligatorio">*</span></label>
+            <input type="email" id="correo" name="correo" required placeholder="usuario@dominio.com"  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+        </fieldset>
+        <br>
+
+        <!-- Sección 2: Calificación del servicio -->
+        <fieldset aria-label="Calificación">
+            <legend>Calificación del servicio</legend>
+            <label for="valoracion">Valoración (1-5) <span class="obligatorio">*</span></label>
+            <select id="valoracion" name="valoracion" required>
+                <option value="">-- Elige --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br><br>
+
+            <!-- checkboxes de recomendacion-->
+            <span>¿Recomendaría?<span class="obligatorio">*</span></span><br>
+            <input type="checkbox" id="recomienda_si" name="recomienda" value="si">
+            <label for="recomienda_si">Sí</label>
+            <input type="checkbox" id="recomienda_no" name="recomienda" value="no">
+            <label for="recomienda_no">No</label>
+        </fieldset>
+        <br>
+
+        <!-- Sección 3: Comentarios adicionales -->
+        <fieldset aria-label="Comentarios adicionales">
+
+            
+            <legend>Comentarios adicionales</legend>
+            <label for="observaciones">Observaciones:</label><br>
+            <textarea id="observaciones" name="observaciones" rows="4" cols="50" placeholder="Tu opinión..." pattern="^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]{3,50}$"></textarea>
+        </fieldset>
+        <br>
+
+        <!-- Boton para enviar el formulario-->
+        <button type="submit" class="button__enviar">Enviar</button>
+
+        <!-- Boton para limpiar el formulario-->
+        <button type="reset" class="button__clear">Limpiar</button>
+    </form>
+
+    <script>
+document.getElementById('miFormulario').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío normal
+    // Aquí puedes procesar los datos si lo necesitas
+    window.location.href = 'gracias.html'; // Redirige a la página de agradecimiento
+});
+</script>
+
+</body>
+</html>

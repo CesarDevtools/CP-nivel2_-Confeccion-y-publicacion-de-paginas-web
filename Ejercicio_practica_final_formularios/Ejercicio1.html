@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobNow 2025 - Registro</title>
+    <link rel="stylesheet" href="./styles/ejercicio1.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Feria de Empleo Digital “JobNow 2025”</h1>
+    <p>Registro para feria de empleo enfocada en tecnologías emergentes</p>
+</header>
+
+<!-- DESCRIPCIÓN DEL EVENTO -->
+<section>
+    <h2>Descripción del evento y objetivos</h2>
+    <p>JobNow 2025 conecta a los mejores talentos digitales con las empresas líderes en tecnologías emergentes. Únete a nuestras charlas, entrevistas y sesiones de networking.</p>
+</section>
+
+<!-- EMPRESAS PARTICIPANTES -->
+<section>
+    <h2>Empresas participantes</h2>
+    <ul>
+        <li>Tech Innovators</li>
+        <li>CyberSecure Corp</li>
+        <li>DataMasters</li>
+        <li>Future Web Devs</li>
+    </ul>
+</section>
+
+<!-- HORARIOS -->
+<section>
+    <h2>Horarios de charlas y entrevistas</h2>
+    <p>Consulta nuestro calendario actualizado en la página oficial. Las actividades se realizarán de 9:00 a 18:00 durante los días del evento.</p>
+</section>
+
+<!-- ENLACES A REDES -->
+<section>
+    <h2>Enlaces a redes</h2>
+    <p>Síguenos en nuestras redes sociales para estar al tanto de todas las novedades:</p>
+    <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+    </ul>
+</section>
+
+<!-- FORMULARIO DE REGISTRO -->
+<section>
+    <h2>Formulario de Registro</h2>
+    <form>
+        <!-- Nombre completo -->
+        <label for="nombre">👤 Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <!-- Nivel de estudios -->
+        <label for="nivel_estudios">🎓 Nivel de estudios</label>
+        <select name="nivel_estudios" id="nivel_estudios" required>
+            <option value="">Seleccione...</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="pregrado">Pregrado</option>
+            <option value="posgrado">Posgrado</option>
+            <option value="doctorado">Doctorado</option>
+        </select>
+
+        <!-- Área de interés -->
+        <fieldset>
+            <legend>🧭 Área de interés profesional</legend>
+            <label for="ia"><input type="checkbox" name="interes" id="ia" value="ia"> IA</label>
+            <label for="bigdata"><input type="checkbox" name="interes" id="bigdata" value="bigdata"> Big Data</label>
+            <label for="ciberseguridad"><input type="checkbox" name="interes" id="ciberseguridad" value="ciberseguridad"> Ciberseguridad</label>
+            <label for="web"><input type="checkbox" name="interes" id="web" value="web"> Desarrollo Web</label>
+            <label for="otros"><input type="checkbox" name="interes" id="otros" value="otros"> Otros</label>
+        </fieldset>
+
+        <!-- Correo -->
+        <label for="correo">📧 Correo electrónico de contacto</label>
+        <input type="email" name="correo" id="correo" required>
+
+        <!-- CV -->
+        <label for="cv">📄 Subida de CV en PDF</label>
+        <input type="file" name="cv" id="cv" accept="application/pdf" required>
+
+        <!-- Aceptación -->
+        <label for="acepto_politicas">
+            <input type="checkbox" name="acepto_politicas" id="acepto_politicas" required>
+            ✅ Acepto las políticas de privacidad y uso de datos
+        </label>
+
+        <!-- Botones -->
+        <button type="reset" class="rounded-button">🔄 Borrar</button>
+        <button type="submit" class="rounded-button">📤 Enviar</button>
+    </form>
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <h2>Newsletter</h2>
+    <form>
+        <label for="newsletter_email">Suscríbete</label>
+        <input type="email" name="newsletter_email" id="newsletter_email" placeholder="Tu correo">
+        <button type="submit" class="rounded-button">Suscribirme</button>
+    </form>
+
+    <h2>Mapa del evento</h2>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.01916483212!2d-122.42067968468149!3d37.779280979758655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c06b12f2f%3A0x4e5c1a3b1becc7f!2sSan%20Francisco%20City%20Hall!5e0!3m2!1ses!2sus!4v1622567712345!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h2>Información de contacto</h2>
+    <p>Email: contacto@jobnow2025.com</p>
+    <p>Teléfono: +1 234 567 8900</p>
+
+    <p>&copy; 2025 JobNow. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

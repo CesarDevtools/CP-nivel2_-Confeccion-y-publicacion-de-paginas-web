@@ -1,0 +1,7 @@
+La plantilla seleccionada es la siguiente: 
+Creative
+URL: https://startbootstrap.com/theme/creative
+
+Realice un cambio total de la tematica. anteriormente era de fotografía y ahora es de ordenadores, por lo tanto cambie el contenido de todos los elementos de la pagina incluyendo las imagenes.
+
+El motivo por el que seleccione este diseño era por la facil edicion y la facilidad que tenia para separar las secciones de servicios y contactos en archivos distintos, dando la impresion de que son 3 paginas diferentes

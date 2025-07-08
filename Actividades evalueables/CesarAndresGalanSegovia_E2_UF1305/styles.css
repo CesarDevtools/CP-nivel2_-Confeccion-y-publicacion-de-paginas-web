@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+   
+    background-color: #f0f0f0;
+}
+
+#tarjeta {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    transition: all 0.3 ease;
+}
+
+.clock-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 175px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#clock {
+    font-size: 3em;
+    color: #333;
+}

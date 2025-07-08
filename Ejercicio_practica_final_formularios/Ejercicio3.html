@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoInnovate 2025 - Registro</title>
+    <link rel="stylesheet" href="./styles/ejercicio3.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Congreso “EcoInnovate 2025”</h1>
+    <p>Un encuentro sobre tecnología y sostenibilidad</p>
+</header>
+
+<!-- RESUMEN DE OBJETIVOS -->
+<section>
+    <h2>Resumen de objetivos del congreso</h2>
+    <p>EcoInnovate 2025 reúne a expertos, empresas y público interesado para debatir sobre innovaciones que promueven un futuro sostenible.</p>
+</section>
+
+<!-- AGENDA ECOLÓGICA -->
+<section>
+    <h2>Agenda ecológica</h2>
+    <p>Consulta la agenda completa con ponencias, paneles y actividades enfocadas en energía limpia, reciclaje, movilidad sostenible y ciudades inteligentes.</p>
+</section>
+
+<!-- TALLERES DESTACADOS -->
+<section>
+    <h2>Talleres destacados</h2>
+    <ul>
+        <li>Energía renovable aplicada</li>
+        <li>Innovaciones en reciclaje</li>
+        <li>Movilidad urbana verde</li>
+        <li>Smart Cities y sostenibilidad</li>
+    </ul>
+</section>
+
+<!-- GALERÍA DE EDICIONES ANTERIORES -->
+<section>
+    <h2>Galería de ediciones anteriores</h2>
+    <p>Explora imágenes y videos de nuestras ediciones pasadas para inspirarte.</p>
+</section>
+
+<!-- FORMULARIO DE REGISTRO -->
+<section>
+    <h2>Formulario de Registro</h2>
+    <form aria-label="Formulario de registro al congreso">
+        <!-- Nombre y apellidos -->
+        <label for="nombre">👤 Nombre y apellidos</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Ciudad y país -->
+        <label for="ciudad">🌍 Ciudad y país de residencia</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <!-- Selección de talleres -->
+        <fieldset>
+            <legend>♻️ Selección de talleres</legend>
+            <label for="energia"><input type="checkbox" id="energia" name="talleres" value="energia"> Energía</label>
+            <label for="reciclaje"><input type="checkbox" id="reciclaje" name="talleres" value="reciclaje"> Reciclaje</label>
+            <label for="movilidad"><input type="checkbox" id="movilidad" name="talleres" value="movilidad"> Movilidad</label>
+            <label for="smartcities"><input type="checkbox" id="smartcities" name="talleres" value="smartcities"> Smart Cities</label>
+        </fieldset>
+
+        <!-- Subida de propuesta -->
+        <label for="propuesta">📁 Subida de propuesta en PDF para ponencia</label>
+        <input type="file" id="propuesta" name="propuesta" accept="application/pdf" required>
+
+        <!-- Aceptación de uso de imagen -->
+        <label for="uso_imagen">
+            <input type="checkbox" id="uso_imagen" name="uso_imagen" required>
+            ✅ Acepto el uso de mi imagen para difusión
+        </label>
+
+        <!-- Botones -->
+        <button type="reset" class="rounded-button">🔄 Limpiar</button>
+        <button type="submit" class="rounded-button">📤 Enviar</button>
+    </form>
+
+        <!-- Newsletter  -->
+     <h2>Newsletter</h2>
+    <form aria-label="Formulario de suscripción al newsletter">
+        <label for="newsletter_email">Suscríbete</label>
+        <input type="email" id="newsletter_email" name="newsletter_email" placeholder="Tu correo">
+        <button type="submit" class="rounded-button">Suscribirme</button>
+    </form>
+</section>
+
+
+
+<!-- PIE DE PÁGINA -->
+<footer>
+    <h2>Redes sociales</h2>
+    <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+    </ul>
+
+    <h2>Contacto</h2>
+    <p>Email: contacto@ecoinnovate2025.com</p>
+    <p>Teléfono: +1 234 567 8901</p>
+
+   
+
+    <p>&copy; 2025 EcoInnovate. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

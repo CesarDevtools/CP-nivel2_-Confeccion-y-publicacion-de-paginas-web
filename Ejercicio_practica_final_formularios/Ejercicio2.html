@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDev Battle 2025 - Inscripción</title>
+    <link rel="stylesheet" href="./styles/ejercicio2.css">
+</head>
+<body>
+
+<header>
+    <h1>GameDev Battle 2025</h1>
+    <p>Torneo online de desarrollo de videojuegos</p>
+</header>
+
+<section>
+    <h2>Descripción del torneo</h2>
+    <p>GameDev Battle 2025 es el evento definitivo para creadores de videojuegos. Compite solo o en equipo, muestra tu creatividad y gana premios increíbles.</p>
+</section>
+
+<section>
+    <h2>Premios y reglas</h2>
+    <p>Premios en efectivo, licencias profesionales y la oportunidad de mostrar tu juego frente a grandes estudios. Consulta las reglas detalladas en nuestra página oficial.</p>
+</section>
+
+<section>
+    <h2>Categorías del concurso</h2>
+    <ul>
+        <li>Mejor Jugabilidad</li>
+        <li>Mejores Gráficos</li>
+        <li>Innovación</li>
+        <li>Premio del Público</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Lista de jueces</h2>
+    <ul>
+        <li>Ana Dev - Unity</li>
+        <li>Bruno Code - Unreal</li>
+        <li>Carlos Pixel - Godot</li>
+        <li>Diana Indie - Juegos Independientes</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Banner animado</h2>
+    <marquee behavior="scroll" direction="left">¡Inscríbete ya y demuestra que eres el mejor desarrollador indie!</marquee>
+</section>
+
+<section>
+    <h2>Formulario de Inscripción</h2>
+    <form>
+        <label for="nickname">󰳕 Nombre de usuario o nickname</label>
+        <input type="text" name="nickname" id="nickname" required>
+
+        <label for="tipo_participante">👥 Tipo de participante</label>
+        <select name="tipo_participante" id="tipo_participante" required>
+            <option value="">Seleccione...</option>
+            <option value="individual">Individual</option>
+            <option value="equipo">En equipo</option>
+        </select>
+
+        <fieldset>
+            <legend>🎮 Plataforma de desarrollo favorita</legend>
+            <label for="unity"><input type="radio" name="plataforma" id="unity" value="unity" required> Unity</label>
+            <label for="unreal"><input type="radio" name="plataforma" id="unreal" value="unreal"> Unreal</label>
+            <label for="godot"><input type="radio" name="plataforma" id="godot" value="godot"> Godot</label>
+            <label for="otros"><input type="radio" name="plataforma" id="otros" value="otros"> Otros</label>
+        </fieldset>
+
+        <label for="demo">📁 Subida de demo del juego (ZIP)</label>
+        <input type="file" name="demo" id="demo" accept="application/zip" required>
+
+        <label for="acepto_normas">
+            <input type="checkbox" name="acepto_normas" id="acepto_normas" required>
+            ✅ Acepto las normas del torneo y cesión de derechos
+        </label>
+
+        <button type="reset">🔄 Reset</button>
+        <button type="submit">📤 Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <h2>Canal de Discord</h2>
+    <p>Únete a nuestro <a href="#" target="_blank">Discord oficial</a> para resolver dudas y conocer a otros participantes.</p>
+
+    <h2>Newsletter</h2>
+    <form>
+        <label for="newsletter_email">Suscríbete</label>
+        <input type="email" name="newsletter_email" id="newsletter_email" placeholder="Tu correo">
+        <button type="submit">Suscribirme</button>
+    </form>
+
+    <p>&copy; 2025 GameDev Battle. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

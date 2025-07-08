@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrastrar y Soltar (manual)</title>
+  <style>
+    #contenedor {
+      width: 600px;
+      height: 400px;
+      border: 2px dashed #aaa;
+      position: relative;
+      margin: 20px auto;
+    }
+
+    #elemento {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      cursor: grab;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Arrastra el cuadro dentro del contenedor</h2>
+
+<div id="contenedor">
+  <div id="elemento"></div>
+</div>
+
+<script>
+  const elemento = document.getElementById('elemento');
+  const contenedor = document.getElementById('contenedor');
+
+  let arrastrando = false;
+  let offsetX, offsetY;
+
+  elemento.addEventListener('mousedown', (e) => {
+    arrastrando = true;
+    // Guarda la diferencia entre la posición del mouse y el borde del elemento
+    offsetX = e.offsetX;
+    offsetY = e.offsetY;
+    elemento.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (arrastrando) {
+      // Posición del mouse relativa al contenedor
+      const rect = contenedor.getBoundingClientRect();
+      let x = e.clientX - rect.left - offsetX;
+      let y = e.clientY - rect.top - offsetY;
+
+      // Opcional: restringir dentro del contenedor
+      x = Math.max(0, Math.min(x, contenedor.clientWidth - elemento.clientWidth));
+      y = Math.max(0, Math.min(y, contenedor.clientHeight - elemento.clientHeight));
+
+      // Mueve el elemento
+      elemento.style.left = x + 'px';
+      elemento.style.top = y + 'px';
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    arrastrando = false;
+    elemento.style.cursor = 'grab';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: blue;
+}
+
+section p {
+    background-color: grey;
+}
+
+ul a {
+    color: green;
+}
+
+p strong {
+    font-weight: bold;
+    color: red;
+}
+
+
+ul li:first-child {
+    border: #aa0808 solid 1px;
+}
+
+h3 span {
+    background-color: yellow;
+}
+
+blockquote p {
+    margin-top: 20px;
+}
+
+figure img {
+    border-color: blue; 
+    border-width: 5px;
+    border-style: solid;
+}
+
+footer *{
+    background-color: black;
+    color: white;
+}
+
+main div em {
+    font-style: italic;
+    color: purple;
+}

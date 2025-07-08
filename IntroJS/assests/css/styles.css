@@ -1,0 +1,29 @@
+body {
+    background-color: #4b6cb7;
+
+}
+
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    line-height: .8;
+    color: white;
+}
+
+.contenido {
+    max-width: 1200px;
+    margin: 5rem auto 0 auto; 
+    color: white;
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2.2rem;
+}
+
+

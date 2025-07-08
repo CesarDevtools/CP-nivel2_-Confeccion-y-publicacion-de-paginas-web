@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 1rem;
+            border: 1px solid rgb(204, 204, 204);
+            border-radius: 5px;
+            background-color: rgb(249, 249, 249);
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+    <header>
+
+      
+        <nav>    
+                <a href="index.html" aria-label="volver a la pagina Principal">Página Principal</a>
+        </nav>
+        
+    </header>
+
+
+    <main aria-label="Formulario de contacto">
+        <h1>Contacto</h1>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+
+    <footer style="text-align: center; padding: 1rem; background-color: #333; color: white;">
+        <p>&copy; 2025 Tienda de Zapatos. Todos los derechos reservados.</p>
+
+        <p>
+            <a href="https://www.facebook.com" target="_blank" style="color: white;">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" style="color: white;">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank" style="color: white;">Instagram</a>
+        </p>
+        
+        <p>Contacto: <a href="mailto:cessargalan@gmail.com" style="color: white;">cessargalan@gmail.com</a>
+        </p>
+    </footer>
+</body>
+</html>

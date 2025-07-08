@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura semántica</title>
+</head>
+
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Revista de salud Digital</h1>
+        <p>Información actualizada sobre tecnología y salud</p>
+    </header>
+
+    <!-- Navegación principal del sitio -->
+    <nav role="navigation" aria-label="Menú principal de navegación">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Sección de banner decorativo que no debe leerse -->
+    <div aria-hidden="true">
+        <img src="./luke-chesser-rCOWMC8qf8A-unsplash.jpg" width="820" height="400"
+            alt="Banner decorativo de salud digital">
+    </div>
+
+    <!-- Botón con descripción accesible -->
+    <button aria-label="Abrir menú lateral">&#9776;</button>
+
+    <!-- Contenido principal del sitio -->
+    <main>
+        <!-- Seccion con un articulo -->
+        <section id="articulos">
+            <article>
+                <h2>Innovaciones médicas con IA</h2>
+                <p>La inteligencia artificial está transformando la atención sanitaria...</p>
+            </article>
+
+            <article>
+                <h2>Wearables para monitoreo cardíaco</h2>
+                <p>Dispositivos portátiles ayudan a detectar anomalías en el ritmo cardíaco...</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Galeria de innovación</h2>
+            <!-- Imagen informativa con descripción útil para usuarios de lectores de pantalla -->
+            <img src="./julien-tromeur-0VCIV2h_Nlg-unsplash.jpg" height="250" alt="Robot asistente transportando medicación">
+
+            <!-- Imagen informativa que complementa el contenido -->
+            <img src="./alexey-demidov-E9byP-Ahfts-unsplash.jpg" height="200" alt="Captura de pantalla de una app">
+
+            <!-- Imagen decorativa: no aporta información adicional-->
+             <img src="./national-cancer-institute-NFvdKIhxYlU-unsplash.jpg" height="230" alt="" aria-hidden="true">
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Revista de salud digital. Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>

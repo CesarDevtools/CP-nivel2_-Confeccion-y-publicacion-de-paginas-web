@@ -1,0 +1,101 @@
+/* ==============================
+   ESTILOS GENERALES DE LA PÁGINA
+   ============================== */
+body {
+    background-color: #ffffff; /* blanco */
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2ecc71; /* verde claro */
+}
+
+/* ==============================
+   ENLACES
+   ============================== */
+a {
+    color: #27ae60; /* verde más intenso */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   FORMULARIOS
+   ============================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 1px solid #2ecc71;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+/* ==============================
+   BOTONES
+   ============================== */
+.rounded-button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px; /* borde redondeado */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rounded-button:hover {
+    background-color: #27ae60;
+}
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666;
+}

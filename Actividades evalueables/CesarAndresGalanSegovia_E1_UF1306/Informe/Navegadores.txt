@@ -1,0 +1,8 @@
+Utilicé Google chrome y Firefox y se hacen las respectivas validaciones a todos los inputs con el uso de las expresiones regulares correspondientes para cada uno. Funciona todo correctamente y tiene un estilo bastante aceptable con el uso de Boostrap. Los pasos a seguir fueron:
+
+1. Creacion del index
+2.Creacion de la logica JS
+3.Animaciones de la imagen y el popup de envio de formulario con CSS
+
+
+
