@@ -1,0 +1,13 @@
+# Robots.txt para Cleanseas
+
+User-agent: *
+Allow: /
+
+# Archivos y directorios que no deben indexarse
+Disallow: /404.html
+
+# Sitemap (cuando esté disponible)
+# Sitemap: https://www.cleanseas.org/sitemap.xml
+
+# Tiempo de espera entre requests (en segundos)
+Crawl-delay: 1
